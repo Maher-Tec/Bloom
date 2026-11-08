@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Warm Celestial Sun/Moon Halo behind the Bloom -->
+    <path android:pathData="M54,48m-28,0a28,28 0,1 1,56 0a28,28 0,1 1,-56 0">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:centerX="54"
+                android:centerY="48"
+                android:gradientRadius="28"
+                android:type="radial">
+                <item android:offset="0.0" android:color="#66FFE8A3" />
+                <item android:offset="0.6" android:color="#282EEDB0" />
+                <item android:offset="1.0" android:color="#002EEDB0" />
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Delicate Celestial Orbit Ring -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#44FFE8A3"
+        android:strokeWidth="0.9"
+        android:pathData="M54,48m-23,0a23,23 0,1 1,46 0a23,23 0,1 1,-46 0" />
+
+    <!-- Twinkling Sanctuary Stars -->
+    <path
+        android:fillColor="#CCFFF6D6"
+        android:pathData="M34,27 L35.2,29.8 L38,31 L35.2,32.2 L34,35 L32.8,32.2 L30,31 L32.8,29.8 Z" />
+    <path
+        android:fillColor="#AA9EFFFF"
+        android:pathData="M75,26 L75.8,28.2 L78,29 L75.8,29.8 L75,32 L74.2,29.8 L72,29 L74.2,28.2 Z" />
+
+    <!-- Water Shimmer Ripples Beneath the Bloom -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#662EEDB0"
+        android:strokeWidth="1.5"
+        android:strokeLineCap="round"
+        android:pathData="M31,72 Q54,76 77,72" />
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#44FFE8A3"
+        android:strokeWidth="1.2"
+        android:strokeLineCap="round"
+        android:pathData="M37,76.5 Q54,79.5 71,76.5" />
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#28FFFFFF"
+        android:strokeWidth="1.0"
+        android:strokeLineCap="round"
+        android:pathData="M44,80.5 Q54,82.5 64,80.5" />
+
+    <!-- Left Emerald Lotus Leaf Pad -->
+    <path android:pathData="M54,67 C41,69 27,65 24,56 C32,52 44,56 54,67 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startX="24"
+                android:startY="56"
+                android:endX="54"
+                android:endY="67"
+                android:type="linear">
+                <item android:offset="0.0" android:color="#FF2EEDB0" />
+                <item android:offset="1.0" android:color="#FF136F50" />
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Right Emerald Lotus Leaf Pad -->
+    <path android:pathData="M54,67 C67,69 81,65 84,56 C76,52 64,56 54,67 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startX="84"
+                android:startY="56"
+                android:endX="54"
+                android:endY="67"
+                android:type="linear">
+                <item android:offset="0.0" android:color="#FF2EEDB0" />
+                <item android:offset="1.0" android:color="#FF136F50" />
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Outer Left Petal (Deep Rose Coral) -->
+    <path android:pathData="M54,66 C38,64 26,53 28,41 C38,41 48,50 54,66 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startX="28"
+                android:startY="41"
+                android:endX="54"
+                android:endY="66"
+                android:type="linear">
+                <item android:offset="0.0" android:color="#FFFF9EB5" />
+                <item android:offset="1.0" android:color="#FFD9386A" />
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Outer Right Petal (Deep Rose Coral) -->
+    <path android:pathData="M54,66 C70,64 82,53 80,41 C70,41 60,50 54,66 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startX="80"
+                android:startY="41"
+                android:endX="54"
+                android:endY="66"
+                android:type="linear">
+                <item android:offset="0.0" android:color="#FFFF9EB5" />
+                <item android:offset="1.0" android:color="#FFD9386A" />
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Mid Left Petal (Luminous Sakura Pink) -->
+    <path android:pathData="M54,66 C41,59 35,44 40,31 C49,36 53,49 54,66 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startX="40"
+                android:startY="31"
+                android:endX="54"
+                android:endY="66"
+                android:type="linear">
+                <item android:offset="0.0" android:color="#FFFFE3EC" />
+                <item android:offset="0.55" android:color="#FFFF8FA3" />
+                <item android:offset="1.0" android:color="#FFE04D7A" />
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Mid Right Petal (Luminous Sakura Pink) -->
+    <path android:pathData="M54,66 C67,59 73,44 68,31 C59,36 55,49 54,66 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startX="68"
+                android:startY="31"
+                android:endX="54"
+                android:endY="66"
+                android:type="linear">
+                <item android:offset="0.0" android:color="#FFFFE3EC" />
+                <item android:offset="0.55" android:color="#FFFF8FA3" />
+                <item android:offset="1.0" android:color="#FFE04D7A" />
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Center Sovereign Lotus Petal (Pearl Cream to Blossom Pink) -->
+    <path android:pathData="M54,67 C43,55 43,37 54,24 C65,37 65,55 54,67 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startX="54"
+                android:startY="24"
+                android:endX="54"
+                android:endY="67"
+                android:type="linear">
+                <item android:offset="0.0" android:color="#FFFFFFFF" />
+                <item android:offset="0.45" android:color="#FFFFCCD8" />
+                <item android:offset="1.0" android:color="#FFFF5C8A" />
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Golden Glowing Core (Heart of the Bloom) -->
+    <path android:pathData="M54,56m-7.5,0a7.5,7.5 0,1 1,15 0a7.5,7.5 0,1 1,-15 0">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:centerX="54"
+                android:centerY="56"
+                android:gradientRadius="7.5"
+                android:type="radial">
+                <item android:offset="0.0" android:color="#FFFFFFFF" />
+                <item android:offset="0.5" android:color="#FFFFE169" />
+                <item android:offset="1.0" android:color="#FFFF9E00" />
+            </gradient>
+        </aapt:attr>
+    </path>
+</vector>

@@ -1,0 +1,15 @@
+name: one_good_thing
+description: Fully procedural living garden painted in Flutter.
+publish_to: none
+version: 3.0.0+3
+environment:
+  sdk: '>=3.4.0 <4.0.0'
+dependencies:
+  flutter:
+    sdk: flutter
+  shared_preferences: ^2.3.2
+  audioplayers: ^6.1.0
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/audio/
