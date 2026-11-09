@@ -650,31 +650,48 @@ class _GardenScreenState extends State<GardenScreen> with TickerProviderStateMix
                       children: [
                         Text(
                           flowerInfo.name,
+                          maxLines: 1,
+                          overflow: TextOverflow.ellipsis,
                           style: const TextStyle(
                             color: kCream,
-                            fontSize: 19,
+                            fontSize: 18,
                             fontWeight: FontWeight.w800,
                           ),
                         ),
                         const SizedBox(height: 4),
-                        Row(
+                        Wrap(
+                          crossAxisAlignment: WrapCrossAlignment.center,
+                          spacing: 8,
+                          runSpacing: 2,
                           children: [
-                            const Icon(Icons.calendar_today_rounded, size: 13, color: kMint),
-                            const SizedBox(width: 6),
-                            Text(
-                              m.day,
-                              style: const TextStyle(
-                                color: kMint,
-                                fontSize: 13,
-                                fontWeight: FontWeight.w600,
-                              ),
+                            Row(
+                              mainAxisSize: MainAxisSize.min,
+                              children: [
+                                const Icon(Icons.calendar_today_rounded, size: 12, color: kMint),
+                                const SizedBox(width: 4),
+                                Text(
+                                  m.day,
+                                  style: const TextStyle(
+                                    color: kMint,
+                                    fontSize: 12,
+                                    fontWeight: FontWeight.w600,
+                                  ),
+                                ),
+                              ],
                             ),
-                            const SizedBox(width: 10),
-                            Text(
-                              'Memory #${index + 1}',
-                              style: TextStyle(
-                                color: Colors.white.withValues(alpha: 0.45),
-                                fontSize: 12,
+                            Container(
+                              padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 1),
+                              decoration: BoxDecoration(
+                                color: Colors.white.withValues(alpha: 0.10),
+                                borderRadius: BorderRadius.circular(6),
+                              ),
+                              child: Text(
+                                '#${index + 1}',
+                                style: TextStyle(
+                                  color: Colors.white.withValues(alpha: 0.6),
+                                  fontSize: 11,
+                                  fontWeight: FontWeight.w700,
+                                ),
                               ),
                             ),
                           ],
@@ -690,8 +707,9 @@ class _GardenScreenState extends State<GardenScreen> with TickerProviderStateMix
                     style: IconButton.styleFrom(
                       backgroundColor: Colors.white.withValues(alpha: 0.1),
                       foregroundColor: kGold,
+                      tapTargetSize: MaterialTapTargetSize.shrinkWrap,
                     ),
-                    icon: const Icon(Icons.photo_camera_back_rounded, size: 20),
+                    icon: const Icon(Icons.photo_camera_back_rounded, size: 19),
                     tooltip: 'Postcard Snapshot',
                   ),
                   if (index == todayIndex) ...[
@@ -704,8 +722,9 @@ class _GardenScreenState extends State<GardenScreen> with TickerProviderStateMix
                       style: IconButton.styleFrom(
                         backgroundColor: kMint.withValues(alpha: 0.2),
                         foregroundColor: kMint,
+                        tapTargetSize: MaterialTapTargetSize.shrinkWrap,
                       ),
-                      icon: const Icon(Icons.edit_rounded, size: 20),
+                      icon: const Icon(Icons.edit_rounded, size: 19),
                       tooltip: 'Edit Memory',
                     ),
                   ],
